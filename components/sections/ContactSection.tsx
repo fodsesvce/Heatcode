@@ -461,7 +461,7 @@ export function ContactSection() {
       <input
         type="hidden"
         name="_next"
-        value="http://localhost:3000"
+        value="https://heatcode-eight.vercel.app/"
       />
 
       {/* Name */}
