@@ -104,7 +104,7 @@ export function HeroOverlay({ currentFrame }: HeroOverlayProps) {
                           sm:max-w-3xl
                           sm:text-lg
                           sm:tracking-[0.35em]">
-              24-HOUR MACHINE LEARNING CHALLENGE
+              MACHINE LEARNING CHALLENGE
             </p>
           </motion.div>
         )}

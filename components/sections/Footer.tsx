@@ -62,7 +62,7 @@ export function Footer() {
             </div>
 
             <p className="text-xs text-white/60 leading-relaxed max-w-sm">
-              The premier 24-hour machine learning hackathon hosted by the Faculty of Data Science and Engineering (FODSE) at Sri Venkateswara College of Engineering.
+              The premier machine learning hackathon hosted by the Faculty of Data Science and Engineering (FODSE) at Sri Venkateswara College of Engineering.
             </p>
 
             <div className="pt-2 text-[11px] text-white/40 tracking-wider">
