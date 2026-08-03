@@ -196,7 +196,7 @@ export default function Home() {
             "
           >
             {[
-              "24 HOURS",
+              "ONLINE",
               "TEAMS OF 2",
               "KAGGLE",
               "MACHINE LEARNING",
