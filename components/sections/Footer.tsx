@@ -62,7 +62,7 @@ export function Footer() {
             </div>
 
             <p className="text-xs text-white/60 leading-relaxed max-w-sm">
-              The premier machine learning hackathon hosted by the Faculty of Data Science and Engineering (FODSE) at Sri Venkateswara College of Engineering.
+              The premier machine learning hackathon hosted by the Forum of Data Science Engineers (FODSE) at Sri Venkateswara College of Engineering.
             </p>
 
             <div className="pt-2 text-[11px] text-white/40 tracking-wider">
@@ -86,7 +86,7 @@ export function Footer() {
               <p className="font-semibold text-white/80">
                 ORGANIZED BY FODSE
               </p>
-              <p>FACULTY OF DATA SCIENCE & ENGINEERING</p>
+              <p>Forum of Data Science Engineers</p>
               <p className="text-[10px] text-[#E50914]">HEATCODE 2026 ARENA</p>
             </div>
           </div>

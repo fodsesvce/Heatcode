@@ -136,7 +136,7 @@ export const WHY_PARTICIPATE_CARDS: WhyParticipateCard[] = [
     id: "networking",
     title: "Networking & Community",
     subtitle: "Connect with Builders",
-    description: "Interact with passionate machine learning practitioners, faculty mentors from SVCE FODSE, and fellow data science pioneers.",
+    description: "Interact with passionate machine learning practitioners, and fellow data science pioneers.",
     badge: "PEER CONNECTIONS",
     iconName: "Network",
   },
@@ -246,7 +246,7 @@ export const REWARDS_DATA = {
 };
 
 export const CONTACT_DETAILS = {
-  organizer: "Faculty of Data Science and Engineering (FODSE)",
+  organizer: "Forum of Data Science Engineers (FODSE)",
   institution: "Sri Venkateswara College of Engineering (SVCE)",
   email: "fodse@svce.ac.in",
   location: "SVCE Campus, Pennalur, Sriperumbudur, Tamil Nadu 602117",
