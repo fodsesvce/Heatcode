@@ -368,7 +368,7 @@ export function AboutSection() {
                     text-[#E50914]
                   "
                 >
-                  FODSE × SVCE
+                  FODSE
                 </div>
 
               </div>

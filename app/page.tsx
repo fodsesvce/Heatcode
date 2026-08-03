@@ -85,7 +85,7 @@ export default function Home() {
         >
           <div>
             <p className="text-[10px] uppercase tracking-[0.3em] text-[#E50914]">
-              FODSE × SVCE
+              FODSE
             </p>
             <h1 className="mt-2 text-[30px] font-black leading-none">
               HEATCODE
@@ -132,7 +132,7 @@ export default function Home() {
           "
         >
           <p className="text-xs uppercase tracking-[0.45em] text-[#E50914]">
-            FODSE × SVCE
+            FODSE
           </p>
           <h1 className="mt-2 text-3xl font-black tracking-tight">
             HEATCODE 2026

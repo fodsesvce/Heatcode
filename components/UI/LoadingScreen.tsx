@@ -39,7 +39,7 @@ export function LoadingScreen({
               <div>
 
                 <p className="text-[10px] uppercase tracking-[0.35em] text-[#E50914] sm:text-xs sm:tracking-[0.45em]">
-                  FODSE × SVCE
+                  FODSE
                 </p>
 
                 <h1 className="mt-3 text-[44px] font-black leading-[0.95] tracking-tight sm:text-4xl">

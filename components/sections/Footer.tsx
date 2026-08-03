@@ -53,7 +53,7 @@ export function Footer() {
               />
               <div>
                 <span className="text-[10px] uppercase tracking-[0.3em] text-[#E50914] font-semibold block">
-                  FODSE × SVCE
+                  FODSE
                 </span>
                 <h3 className={`${michroma.className} text-xl font-black text-white tracking-wider`}>
                   HEATCODE 2026
