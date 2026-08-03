@@ -353,7 +353,7 @@ export function ContactSection() {
       <div className="flex gap-3">
 
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/fodse_svce?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
@@ -363,7 +363,7 @@ export function ContactSection() {
         </a>
 
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/the-forum-of-data-science-engineers-b37716291 "
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"

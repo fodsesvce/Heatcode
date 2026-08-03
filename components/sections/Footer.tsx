@@ -66,7 +66,7 @@ export function Footer() {
             </p>
 
             <div className="pt-2 text-[11px] text-white/40 tracking-wider">
-              <span>VENUE: SVCE CAMPUS, PENNALUR</span>
+              <span>VENUE: ONLINE</span>
             </div>
           </div>
 
