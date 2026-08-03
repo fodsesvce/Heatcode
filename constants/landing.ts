@@ -249,7 +249,7 @@ export const CONTACT_DETAILS = {
   organizer: "Forum of Data Science Engineers (FODSE)",
   institution: "Sri Venkateswara College of Engineering (SVCE)",
   email: "fodse@svce.ac.in",
-  location: "SVCE Campus, Pennalur, Sriperumbudur, Tamil Nadu 602117",
+  location: "Online",
   socials: [
     { name: "Instagram", href: "https://instagram.com", icon: "Instagram" },
     { name: "LinkedIn", href: "https://linkedin.com", icon: "Linkedin" },
