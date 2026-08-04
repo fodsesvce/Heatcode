@@ -181,7 +181,7 @@ export default function Home() {
             className="
               pointer-events-none
               absolute
-              bottom-4
+              bottom-6
               left-1/2
               z-30
 
@@ -238,19 +238,27 @@ export default function Home() {
 {/* MOBILE REGISTER BUTTON */}
 {/* ===================================================== */}
 
+      {/* ===================================================== */}
+{/* MOBILE REGISTER BUTTON */}
+{/* ===================================================== */}
+
 <motion.div
-  initial={{ opacity: 0, y: 100 }}
+  initial={{ opacity: 0, y: 60 }}
   animate={{
     opacity: isScene4 ? 0 : 1,
-    y: isScene4 ? 100 : 0,
+    y: isScene4 ? 60 : 0,
   }}
   transition={{ duration: 0.35 }}
   className="
     fixed
-    bottom-4
-    left-4
-    right-4
+    bottom-24
+    left-1/2
+    -translate-x-1/2
     z-[60]
+
+    w-[88%]
+    max-w-sm
+
     md:hidden
   "
 >
@@ -258,18 +266,27 @@ export default function Home() {
     onClick={() => window.open(GOOGLE_FORM_URL, "_blank")}
     className="
       w-full
-      rounded-xl
+
+      rounded-full
+
       bg-[#E50914]
-      px-6
-      py-4
-      text-base
+
+      py-3
+      px-5
+
+      text-sm
       font-bold
       uppercase
-      tracking-[0.15em]
+      tracking-[0.25em]
+
       text-white
-      shadow-[0_10px_35px_rgba(229,9,20,0.45)]
+
+      shadow-[0_10px_30px_rgba(229,9,20,0.35)]
+
       transition-all
       duration-300
+
+      hover:bg-[#ff1d28]
       active:scale-95
     "
   >
