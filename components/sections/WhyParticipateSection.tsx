@@ -23,6 +23,9 @@ const ICON_MAP = {
 };
 
 export function WhyParticipateSection() {
+  const GOOGLE_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdqkKNa3HTwwa845wYmxNJeTu0jygtmJeIw95qNPtLD8u30pA/viewform?usp=publish-editor";
+
   return (
     <section
       id="why-participate"
@@ -75,6 +78,54 @@ export function WhyParticipateSection() {
 >
             Designed for engineers who crave authentic data complexity, real-time leaderboard thrills, and high-impact machine learning credentials.
           </p>
+          <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.5, delay: 0.15 }}
+  className="mt-10 flex justify-center"
+>
+  <button
+    onClick={() => window.open(GOOGLE_FORM_URL, "_blank")}
+    className="
+      group
+      inline-flex
+      items-center
+      justify-center
+
+      rounded-xl
+      border
+      border-[#E50914]
+
+      bg-[#E50914]
+      px-8
+      py-4
+
+      text-sm
+      sm:text-base
+
+      font-bold
+      uppercase
+      tracking-[0.25em]
+
+      text-white
+
+      shadow-[0_10px_35px_rgba(229,9,20,0.35)]
+
+      transition-all
+      duration-300
+
+      hover:-translate-y-1
+      hover:scale-105
+      hover:bg-red-600
+      hover:shadow-[0_18px_45px_rgba(229,9,20,0.55)]
+
+      active:scale-95
+    "
+  >
+    Register Here
+  </button>
+</motion.div>
         </motion.div>
 
         {/* ========================================================= */}
