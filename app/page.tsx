@@ -31,6 +31,9 @@ export default function Home() {
     currentFrame >= SCENES.SCENE_4.startFrame &&
     currentFrame <= SCENES.SCENE_4.endFrame;
 
+  const GOOGLE_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdqkKNa3HTwwa845wYmxNJeTu0jygtmJeIw95qNPtLD8u30pA/viewform?usp=publish-editor";
+
   return (
     <main className="relative min-h-screen w-full bg-[#030305] text-white select-none overflow-x-hidden">
       {/* ===================================================== */}
@@ -63,9 +66,9 @@ export default function Home() {
         {/* MOBILE TOP INFO */}
         <motion.div
           animate={{
-            opacity: isScene4 ? 0 : 1,
-            y: isScene4 ? -15 : 0,
-          }}
+  opacity: 1,
+  y: 0,
+}}
           transition={{
             duration: 0.35,
           }}
@@ -231,6 +234,48 @@ export default function Home() {
 
         <HeroOverlay currentFrame={currentFrame} />
         <CTAOverlay currentFrame={currentFrame} />
+        {/* ===================================================== */}
+{/* MOBILE REGISTER BUTTON */}
+{/* ===================================================== */}
+
+<motion.div
+  initial={{ opacity: 0, y: 100 }}
+  animate={{
+    opacity: isScene4 ? 0 : 1,
+    y: isScene4 ? 100 : 0,
+  }}
+  transition={{ duration: 0.35 }}
+  className="
+    fixed
+    bottom-4
+    left-4
+    right-4
+    z-[60]
+    md:hidden
+  "
+>
+  <button
+    onClick={() => window.open(GOOGLE_FORM_URL, "_blank")}
+    className="
+      w-full
+      rounded-xl
+      bg-[#E50914]
+      px-6
+      py-4
+      text-base
+      font-bold
+      uppercase
+      tracking-[0.15em]
+      text-white
+      shadow-[0_10px_35px_rgba(229,9,20,0.45)]
+      transition-all
+      duration-300
+      active:scale-95
+    "
+  >
+    Register Here
+  </button>
+</motion.div>
       </section>
 
       {/* ===================================================== */}
