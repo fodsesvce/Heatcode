@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import { CanvasPlayer } from "@/components/Canvas/CanvasPlayer";
 import { CTAOverlay } from "@/components/Overlay/CTAOverlay";
 import { HeroOverlay } from "@/components/Overlay/HeroOverlay";
@@ -34,12 +35,21 @@ export default function Home() {
   const GOOGLE_FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSdqkKNa3HTwwa845wYmxNJeTu0jygtmJeIw95qNPtLD8u30pA/viewform?usp=publish-editor";
 
+  const heroRef = useRef<HTMLElement | null>(null);
+
+const heroInView = useInView(heroRef, {
+  amount: 0.35,
+});
+
   return (
     <main className="relative min-h-screen w-full bg-[#030305] text-white select-none overflow-x-hidden">
       {/* ===================================================== */}
       {/* HERO SECTION (SCENES 1 - 4 FRAME ENGINE & OVERLAYS) */}
       {/* ===================================================== */}
-      <section className="relative h-screen w-full shrink-0 overflow-hidden">
+      <section
+  ref={heroRef}
+  className="relative h-screen w-full shrink-0 overflow-hidden"
+>
         <LoadingScreen
           percentage={percentage}
           isStage2Ready={isStage2Ready}
@@ -245,22 +255,24 @@ export default function Home() {
 <motion.div
   initial={{ opacity: 0, y: 60 }}
   animate={{
-    opacity: isScene4 ? 0 : 1,
-    y: isScene4 ? 60 : 0,
-  }}
+  opacity: heroInView && !isScene4 ? 1 : 0,
+  y: heroInView && !isScene4 ? 0 : 60,
+}}
   transition={{ duration: 0.35 }}
-  className="
-    fixed
-    bottom-24
-    left-1/2
-    -translate-x-1/2
-    z-[60]
+  className={`
+fixed
+bottom-24
+left-1/2
+-translate-x-1/2
+z-[60]
 
-    w-[88%]
-    max-w-sm
+w-[88%]
+max-w-sm
 
-    md:hidden
-  "
+md:hidden
+
+${heroInView && !isScene4 ? "pointer-events-auto" : "pointer-events-none"}
+`}
 >
   <button
     onClick={() => window.open(GOOGLE_FORM_URL, "_blank")}
