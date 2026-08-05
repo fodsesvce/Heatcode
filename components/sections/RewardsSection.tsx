@@ -125,7 +125,7 @@ export function RewardsSection() {
   <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-5 py-3">
     <Sparkles className="h-4 w-4 text-[#E50914]" />
     <span className="text-xs uppercase tracking-wider font-semibold text-white">
-      Participation Certificate
+      Participation certificate
     </span>
   </div>
 
