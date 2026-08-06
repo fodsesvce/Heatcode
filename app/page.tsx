@@ -11,6 +11,7 @@ import { AboutSection } from "@/components/sections/AboutSection";
 import { WhyParticipateSection } from "@/components/sections/WhyParticipateSection";
 import { ScheduleSection } from "@/components/sections/ScheduleSection";
 import { RewardsSection } from "@/components/sections/RewardsSection";
+import { SponsorsSection } from "@/components/sections/SponsorsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { Footer } from "@/components/sections/Footer";
 import { useFrameLoader } from "@/hooks/useFrameLoader";
@@ -314,8 +315,9 @@ ${heroInView && !isScene4 ? "pointer-events-auto" : "pointer-events-none"}
       <WhyParticipateSection />
       <ScheduleSection />
       <RewardsSection />
-      <ContactSection />
-      <Footer />
+<SponsorsSection />
+<ContactSection />
+<Footer />
     </main>
   );
 }

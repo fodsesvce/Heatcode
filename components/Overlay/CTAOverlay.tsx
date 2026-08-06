@@ -16,6 +16,7 @@ const NAV_ITEMS = [
   "Why Participate",
   "Schedule",
   "Rewards",
+  "Sponsors",
   "Contact",
 ];
 const GOOGLE_FORM_URL =
@@ -33,13 +34,14 @@ export function CTAOverlay({
 
   const handleScrollTo = (item: string) => {
     const targetMap: Record<string, string> = {
-      About: "about",
-      "Why Participate": "why-participate",
-      Schedule: "schedule",
-      Rewards: "rewards",
-      Contact: "contact",
-      "Register Now": "register",
-    };
+  About: "about",
+  "Why Participate": "why-participate",
+  Schedule: "schedule",
+  Rewards: "rewards",
+  Sponsors: "sponsors",
+  Contact: "contact",
+  "Register Now": "register",
+};
     const targetId = targetMap[item] || item.toLowerCase().replace(/\s+/g, "-");
     const el = document.getElementById(targetId);
     if (el) {

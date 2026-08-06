@@ -1,26 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Coins,
-  FileCheck,
-  Crown,
-  Zap,
-  Gift,
-  Trophy,
-  Sparkles,
-} from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { michroma } from "@/app/fonts";
-import { REWARDS_DATA } from "@/constants/landing";
 import { SpiderWebBackground } from "@/components/UI/SpiderWebBackground";
 
-const ICON_MAP = {
-  Coins,
-  FileCheck,
-  Crown,
-  Zap,
-  Gift,
-};
+
 
 export function RewardsSection() {
   return (
@@ -65,7 +50,7 @@ export function RewardsSection() {
           </h2>
 
           <p className="mt-4 text-sm sm:text-base text-white/60 leading-relaxed">
-            More than prizes—HeatCode celebrates innovation, technical excellence, and the determination to solve real-world machine learning challenges.
+            More than prizes—HEATCODE celebrates innovation, cybersecurity excellence, and the determination to solve real-world technical challenges.
           </p>
         </motion.div>
 
@@ -80,9 +65,9 @@ export function RewardsSection() {
           className="relative max-w-4xl mx-auto mb-16"
         >
           {/* Animated Ambient Outer Pulse Glow */}
-          <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-[#E50914]/30 via-white/10 to-[#E50914]/30 blur-2xl opacity-75 animate-pulse" />
+          <div className="absolute -inset-1 rounded-[32px] bg-gradient-to-r from-[#E50914]/30 via-white/10 to-[#E50914]/30 blur-2xl opacity-75 animate-pulse" />
 
-          <div className="relative rounded-3xl border border-[#E50914]/40 bg-gradient-to-b from-[#081524]/95 via-[#05070B]/95 to-[#030305]/98 p-8 sm:p-12 text-center backdrop-blur-2xl shadow-[0_20px_70px_rgba(229,9,20,0.25)]">
+          <div className="relative rounded-[32px] border border-[#E50914]/40 bg-gradient-to-b from-[#081524]/95 via-[#05070B]/95 to-[#030305]/98 p-8 sm:p-12 text-center backdrop-blur-2xl shadow-[0_20px_70px_rgba(229,9,20,0.25)]">
             
             <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-[#E50914]/50 bg-[#E50914]/15 text-[#E50914] text-xs uppercase tracking-widest font-semibold mb-6">
               <Sparkles className="h-4 w-4 animate-spin" />
@@ -97,40 +82,109 @@ export function RewardsSection() {
   Rewards
 </h3>
 
-            <p className="mt-5 max-w-2xl mx-auto text-[16px] leading-8 text-white/70">
-  Cash prizes will be awarded to the <span className="font-semibold text-white">Winner</span> and{" "}
-  <span className="font-semibold text-white">Runner-up</span>. Every eligible participant who successfully completes the competition will receive an{" "}
-  <span className="font-semibold text-[#E50914]">
-    Official Participation Certificate
-  </span>{" "}
-  from FODSE.
+            <p className="mt-6 mx-auto max-w-2xl text-[16px] leading-8 text-white/65">
+  The battlefield is set, the challenges await, and only the most
+  determined teams will rise to the top. Compete with confidence,
+  innovate without limits, and earn recognition that extends beyond
+  the competition.
 </p>
 
-            <div className="mt-10 flex flex-wrap justify-center gap-4">
+          <div className="mt-16">
 
-  <div className="flex items-center gap-2 rounded-xl border border-[#E50914]/30 bg-white/[0.04] px-5 py-3">
-    <Trophy className="h-4 w-4 text-yellow-400" />
-    <span className="text-xs uppercase tracking-wider font-semibold text-white">
-      Winner
-    </span>
+  <div className="mx-auto mt-16 grid max-w-4xl gap-8 md:grid-cols-2">
+
+    {/* Winner */}
+
+    <motion.div
+      initial={{ opacity: 0, x: -80 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: .7 }}
+      className="relative overflow-hidden rounded-[32px] border border-[#E50914]/20 bg-gradient-to-br from-[#11131A] via-[#090B11] to-[#050608] px-8
+py-7"
+    >
+      <div className="absolute -right-24 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-[#E50914]/10 blur-[120px]" />
+
+      <p className="text-xs uppercase tracking-[0.45em] text-[#E50914]">
+        Winner
+      </p>
+
+      <h2
+        className={`${michroma.className} mt-6 text-6xl lg:text-7xl text-white`}
+      >
+        ₹600
+      </h2>
+
+      <div className="mt-8 h-px bg-white/10" />
+
+<p className="mt-5 text-sm text-white/50">
+Cash Prize
+</p>
+
+      
+    </motion.div>
+
+    
+
+    {/* Runner Up */}
+
+    <motion.div
+      initial={{ opacity: 0, x: 80 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: .7 }}
+      className="relative overflow-hidden rounded-[32px] border border-white/10 bg-gradient-to-br from-[#11131A] via-[#090B11] to-[#050608] px-8
+py-7"
+    >
+      <div className="absolute -left-24 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-white/5 blur-[120px]" />
+
+      <p className="text-xs uppercase tracking-[0.45em] text-white/60">
+        Runner-Up
+      </p>
+
+      <h2
+        className={`${michroma.className} mt-6 text-6xl lg:text-7xl text-white`}
+      >
+        ₹400
+      </h2>
+
+      <div className="mt-8 h-px bg-white/10" />
+
+<p className="mt-5 text-sm text-white/50">
+Cash Prize
+</p>
+
+      
+    </motion.div>
+
   </div>
 
-  <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-5 py-3">
-    <Trophy className="h-4 w-4 text-gray-300" />
-    <span className="text-xs uppercase tracking-wider font-semibold text-white">
-      Runner-up
-    </span>
-  </div>
+  {/* Certificate */}
 
-  <div className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-5 py-3">
-    <Sparkles className="h-4 w-4 text-[#E50914]" />
-    <span className="text-xs uppercase tracking-wider font-semibold text-white">
-      Participation certificate
-    </span>
-  </div>
+{/* Certificate */}
 
-</div>
+<motion.div
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ delay: 0.2 }}
+  className="mx-auto mt-16 max-w-5xl rounded-[32px] border border-[#E50914]/20 bg-gradient-to-r from-[#0B0B10] via-[#111114] to-[#0B0B10] px-10 py-8 text-center"
+>
+  <h3
+    className={`${michroma.className} text-2xl text-white`}
+  >
+    Official Participation Certificate
+  </h3>
 
+  <p className="mx-auto mt-5 max-w-3xl text-white/60 leading-8">
+    Every participant who successfully completes and submits HEATCODE
+    2026 will receive an official participation certificate from FODSE.
+  </p>
+</motion.div>
+
+    
+
+</div> 
           </div>
         </motion.div>
 
